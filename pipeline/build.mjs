@@ -128,22 +128,35 @@ const busList = busArgs.filter((a) => a !== '--all');
 // service names and collapse into RL1; its Expreso/Nochebús twins (11-A, 115,
 // 165-A, 200, 34-B, 47-A, 57-A, 76) likewise merge with their ordinary run,
 // which is right — they are the same line, drawn once.
+// Display labels for line keys that carry a pipeline-only disambiguator.
+// The KEY has to stay unique — it drives route merging, colour lookup and
+// selection — but the map must print what the city prints. Filled while
+// re-keying, applied to the display strings just before writing.
+const LBL = new Map();
+
+// Seven operators each number a "Línea 1", so the key carries the operator
+// and the label carries what the street carries. Corredores and RTP — 251 of
+// the 289 lines — do not collide with anyone and simply print their own code;
+// Metrobús 1-7 and Trolébus 1-13 do collide, and there amber against green is
+// the difference, exactly as it is on the ground. The three single-line
+// railways have no street number at all and keep their code (see the legend).
 const lineKey = (sn, r) => {
   const s0 = (sn || '').trim();
   const ag = (r && r.agency_id) || '';
-  if (ag === 'METRO') return 'M' + (s0 === 'L12' ? '12' : s0);
-  if (ag === 'MB') return 'B' + s0.replace(/^SL0?/, 'SL');
-  if (ag === 'TROLE' || ag === 'SEMOVI') return 'T' + s0;
+  const K = (k, d) => { const v = (d ?? s0).replace(/\s+/g, ''); if (v && v !== k) LBL.set(k, v); return k; };
+  if (ag === 'METRO') { const d = s0 === 'L12' ? '12' : s0; return K('M' + d, d); }
+  if (ag === 'MB') return K('B' + s0.replace(/^SL0?/, 'SL'));
+  if (ag === 'TROLE' || ag === 'SEMOVI') return K('T' + s0);
   if (ag === 'TL') return 'TL';
-  if (ag === 'CBB') return 'CB' + s0;
+  if (ag === 'CBB') return K('CB' + s0);
   if (ag === 'SUB') return 'FS';
   if (ag === 'INTERURBANO') return 'TI';
-  if (ag === 'PUMABUS') return s0.replace(/^PUMA/, 'P');
+  if (ag === 'PUMABUS') return K(s0.replace(/^PUMA/, 'P'));
   if (ag === 'RTP') {
     const m = /^Ordinario\d+\s*(L\d+)$/i.exec(s0);
-    return 'R' + (m ? m[1].toUpperCase() : s0.replace(/\s+/g, ''));
+    return m ? K('R' + m[1].toUpperCase(), m[1].toUpperCase()) : K('R' + s0.replace(/\s+/g, ''));
   }
-  if (ag === 'CC') return 'C' + s0.replace(/\s+/g, '');
+  if (ag === 'CC') return K('C' + s0.replace(/\s+/g, ''));
   return s0;
 };
 const MODES = [{
@@ -1703,6 +1716,31 @@ for (const f of routeFeatures) for (const [lon, lat] of f.geometry.coordinates) 
   if (lat < bLatMin) bLatMin = lat; if (lat > bLatMax) bLatMax = lat;
 }
 
+// ---------- display labels ----------
+// The keys keep their prefixes; every string the map PRINTS loses them. Two
+// keys can now print the same number — that is the point, because the street
+// prints the same number — so each colour group is deduplicated on its own
+// (the groups ride in separate properties, so a green 9 and a navy 9 both
+// survive: there the colour is the difference).
+const relabel = (s) => {
+  const out = [];
+  for (const k of s.split(', ')) {
+    const v = LBL.get(k) ?? k;
+    if (!out.includes(v)) out.push(v);
+  }
+  return out.join(', ');
+};
+for (const features of [routeFeatures, streetFeatures, labelFeatures, stopFeatures, badgeFeatures]) {
+  for (const f of features) {
+    const p = f.properties;
+    for (const k of ['lines', 'busLines', 'tLines', 'ntLines', 'mLines', 'nmLines']) {
+      if (typeof p[k] === 'string' && p[k]) p[k] = relabel(p[k]);
+    }
+    if (typeof p.line === 'string' && LBL.has(p.line)) p.lbl = LBL.get(p.line);
+  }
+}
+log(`Display labels: ${LBL.size} keys print the number the city signs`);
+
 const outDir = join(ROOT, 'data/out');
 mkdirSync(outDir, { recursive: true });
 const fc = (features) => JSON.stringify({ type: 'FeatureCollection', features });
@@ -1718,6 +1756,8 @@ writeFileSync(join(outDir, 'meta.json'), JSON.stringify({
   bbox: [bLonMin, bLatMin, bLonMax, bLatMax],
   badgeBands: BADGE_BANDS,
   modes: MODES.map((m) => ({ mode: m.mode, label: m.label, color: m.color })),
-  lines: metaLines,
+  // the chips keep `line` as their value (selection matches keys) and print
+  // `label` where the city's number differs from the pipeline's key
+  lines: metaLines.map((l) => (LBL.has(l.line) ? { ...l, label: LBL.get(l.line) } : l)),
 }, null, 2));
 log(`Wrote data/out/{route,streets,labels,street-names,stops,badges,gtfs-shape}.geojson + meta.json`);

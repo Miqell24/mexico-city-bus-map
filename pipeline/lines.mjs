@@ -88,6 +88,11 @@ for (const L of (BIG ? [32, 44, 56, 66] : [38, 51, 63])) for (let h = 0; h < 360
 const streets = JSON.parse(readFileSync(join(OUT, 'streets.geojson'), 'utf8'));
 const rawLabels = JSON.parse(readFileSync(join(OUT, 'labels.geojson'), 'utf8'));
 const meta = JSON.parse(readFileSync(join(OUT, 'meta.json'), 'utf8'));
+// Display labels: build.mjs writes the number the city signs beside every key
+// whose key carries a pipeline-only prefix. The Lines view prints numbers too,
+// so it reads the same table — the keys keep driving colour and selection.
+const LBL = new Map((meta.lines || []).filter((l) => l.label).map((l) => [l.line, l.label]));
+const disp = (l) => LBL.get(l) ?? l;
 
 // ---------- 1. chains: weld runs with the same line set through their nodes ----------
 // build.mjs cuts a roadway wherever the line set changes, so a single avenue
@@ -643,7 +648,7 @@ log(`${swings} slot handovers smoothed at junctions, ${funnels} of them funnelli
 // instead of disappearing into the grey.
 const corridorF = chains.filter((c) => c.n > MAX_SEPARATE).map((c) => ({
   type: 'Feature',
-  properties: { mode: c.mode, n: c.n, arr: c.arr, lines: c.arr.join(', ') },
+  properties: { mode: c.mode, n: c.n, arr: c.arr, lines: c.arr.map(disp).join(', ') },
   geometry: { type: 'LineString', coordinates: c.sm.map(toDeg) },
 }));
 log(`${corridorF.length} grey trunks (widest carries ${Math.max(...corridorF.map((f) => f.properties.n))} lines)`);
@@ -674,7 +679,7 @@ for (const f of rawLabels.features) {
   list.forEach((l, i) => {
     // the separator travels INSIDE the section, so the row still wraps at the
     // spaces exactly the way a plain string one did
-    props['l' + i] = l + (i < list.length - 1 ? ', ' : '');
+    props['l' + i] = disp(l) + (i < list.length - 1 ? ', ' : '');
     props['c' + i] = (colour.get(l) || { hex: '#41464e' }).hex;
   });
   rowF.push({ type: 'Feature', properties: props, geometry: f.geometry });
