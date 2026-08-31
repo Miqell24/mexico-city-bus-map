@@ -137,16 +137,18 @@ const LBL = new Map();
 // Seven operators each number a "Línea 1", so the key carries the operator
 // and the label carries what the street carries. Corredores and RTP — 251 of
 // the 289 lines — do not collide with anyone and simply print their own code;
-// Metrobús 1-7 and Trolébus 1-13 do collide, and there amber against green is
-// the difference, exactly as it is on the ground. The three single-line
-// railways have no street number at all and keep their code (see the legend).
+// Metrobús 1-7 prints its bare number in amber; the Trolebús signs its lines
+// L1-L13 on the street, so that is what it prints here (in green — the L1 it
+// shares with RTP's Ordinario Línea 1 differs by colour, as on the ground).
+// The three single-line railways have no street number at all and keep their
+// code (see the legend).
 const lineKey = (sn, r) => {
   const s0 = (sn || '').trim();
   const ag = (r && r.agency_id) || '';
   const K = (k, d) => { const v = (d ?? s0).replace(/\s+/g, ''); if (v && v !== k) LBL.set(k, v); return k; };
   if (ag === 'METRO') { const d = s0 === 'L12' ? '12' : s0; return K('M' + d, d); }
   if (ag === 'MB') return K('B' + s0.replace(/^SL0?/, 'SL'));
-  if (ag === 'TROLE' || ag === 'SEMOVI') return K('T' + s0);
+  if (ag === 'TROLE' || ag === 'SEMOVI') return K('T' + s0, 'L' + s0);
   if (ag === 'TL') return 'TL';
   if (ag === 'CBB') return K('CB' + s0);
   if (ag === 'SUB') return 'FS';

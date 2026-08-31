@@ -98,10 +98,10 @@
     <li><label><input type="checkbox" id="toggle-bus" checked> <span class="sw line corridor-only"></span> Bus routes</label></li>
     <li class="sublegend corridor-only"><b>Corredores concesionados</b> &mdash; 1A&ndash;38B &middot; <b>RTP</b> &mdash; 1-D, 11-A, 101&ndash;200 with their letter
       &middot; <b>Pumab&uacute;s</b> &mdash; PUMA1&ndash;PUMA13 on the UNAM campus. The two big fleets never use the same number.</li>
-    <li class="sublegend corridor-only"><span class="mini trolley"></span>the twelve STE TROLLEB&Uacute;S lines &mdash; 1&ndash;10, 12 and 13 &mdash; are drawn green; the feed files eleven of them as ordinary buses</li>
+    <li class="sublegend corridor-only"><span class="mini trolley"></span>the twelve STE TROLLEB&Uacute;S lines &mdash; L1&ndash;L10, L12 and L13, with the L exactly as the street signs them &mdash; are drawn green; the feed files eleven of them as ordinary buses</li>
     <li><label><input type="checkbox" id="toggle-mline" checked> <span class="sw line corridor-only mline"></span> Metrob&uacute;s (BRT)</label></li>
     <li class="sublegend corridor-only"><span class="mini" style="background:#e8a000"></span>L&iacute;neas 1&ndash;7 and the SL01 support service; dashed = shared with a street bus.
-      Metrob&uacute;s and Trolleb&uacute;s both number from 1 &mdash; amber against green is what tells a 1 from a 1, exactly as on the ground.</li>
+      The Metrob&uacute;s prints its bare number in amber, the Trolleb&uacute;s its L-number in green &mdash; both exactly as signed on the ground.</li>
     <li><label><input type="checkbox" id="toggle-tram" checked> <span class="sw line corridor-only metro"></span> Metro, Tren Ligero, Cableb&uacute;s &amp; commuter rail</label></li>
     <li class="sublegend corridor-only">Metro 1&ndash;9, 12, A and B &middot; Cableb&uacute;s 1&ndash;3 (gondolas) &mdash; all in their official colours, all signed as bare
       L&iacute;neas in the street.</li>
@@ -113,7 +113,7 @@
   </ul>
   <details class="lines">
     <summary>All lines <span id="count"></span></summary>
-    <p class="hint">Click a line to show its route and stops. Seven operators here number their lines from 1, so every key carries its operator: M for the Metro, B for the Metrob&uacute;s, T for the Trolebús, CB for the Cableb&uacute;s, R for RTP, C for the concessioned corridors, P for the Pumab&uacute;s.</p>
+    <p class="hint">Click a line to show its route and stops. Every chip prints what the street prints &mdash; the corredores' 1A&ndash;38B, RTP's numbers, the Trolebús' L1&ndash;L13, the Metro's bare l&iacute;neas &mdash; and the colour carries the operator.</p>
     <div id="chips" class="chip-cloud"></div>
   </details>
   <div class="labelsize" title="Scales the transit content — line numbers, stop names and terminus badges — at any zoom. The PNG exports use the sizes you pick here.">
