@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mexico City Public Transport — interactive map</title>
+<title>Ciudad de México / Mexico City Public Transport — interactive map</title>
 <link rel="stylesheet" href="vendor/maplibre-gl.css">
 <link rel="stylesheet" href="style.css?v=20260826c">
 </head>
@@ -38,7 +38,7 @@
 </div>
 <aside id="panel">
   <button id="panel-toggle" aria-label="Hide the panel" title="Hide the panel">&#215;</button>
-  <h1>Mexico City<br>Public Transport</h1>
+  <h1>Ciudad de México / Mexico City<br>Public Transport</h1>
   <details class="city-switch">
     <summary>Switch city</summary>
     <nav>
@@ -46,23 +46,23 @@
       <a href="https://miqell24.github.io/krakow-bus-map/">Kraków</a>
       <a href="https://miqell24.github.io/krakow-mld-bus-map/">Kraków + MLD (Małopolska feeder lines)</a>
       <a href="https://miqell24.github.io/poznan-bus-map/">Poznań</a>
-      <a href="https://miqell24.github.io/gzm-bus-map/">GZM Metropolis (Katowice)</a>
+      <a href="https://miqell24.github.io/gzm-bus-map/">Metropolia GZM (Katowice)</a>
       <a href="https://miqell24.github.io/rybnik-bus-map/">Rybnik Region (Żory · Jastrzębie · Wodzisław)</a>
       <a href="https://miqell24.github.io/trojmiasto-bus-map/">Tricity (Gdańsk–Gdynia–Sopot)</a>
       <a href="https://miqell24.github.io/grodzisk-bus-map/">Grodzisk Mazowiecki Region</a>
-      <a href="https://miqell24.github.io/warsaw-bus-map/">Warsaw Region (Warsaw &middot; Grodzisk Maz. &middot; the communes around)</a>
+      <a href="https://miqell24.github.io/warsaw-bus-map/">Warszawa (Grodzisk Maz. &middot; the communes around)</a>
       <a href="https://miqell24.github.io/lodz-bus-map/">Łódź</a>
       <a href="https://miqell24.github.io/olsztyn-bus-map/">Olsztyn</a>
       <a href="https://miqell24.github.io/berlin-bus-map/">Berlin (with Potsdam &amp; the Brandenburg ring)</a>
-      <a href="https://miqell24.github.io/vienna-bus-map/">Vienna</a>
+      <a href="https://miqell24.github.io/vienna-bus-map/">Wien</a>
       <a href="https://miqell24.github.io/paris-bus-map/">Paris</a>
       <a href="https://miqell24.github.io/randstad-bus-map/">Randstad (Amsterdam &middot; Haarlem &middot; Leiden &middot; Den Haag &middot; Rotterdam)</a>
-      <a href="https://miqell24.github.io/copenhagen-bus-map/">Copenhagen</a>
+      <a href="https://miqell24.github.io/copenhagen-bus-map/">København</a>
       <a href="https://miqell24.github.io/aarhus-bus-map/">Aarhus</a>
       <a href="https://miqell24.github.io/stockholm-bus-map/">Stockholm</a>
       <a href="https://miqell24.github.io/goteborg-bus-map/">Göteborg</a>
       <a href="https://miqell24.github.io/london-bus-map/">London</a>
-      <a href="https://miqell24.github.io/bucharest-bus-map/">Bucharest &amp; Ilfov</a>
+      <a href="https://miqell24.github.io/bucharest-bus-map/">București &amp; Ilfov</a>
       <a href="https://miqell24.github.io/budapest-bus-map/">Budapest</a>
       <a href="https://miqell24.github.io/cluj-bus-map/">Cluj-Napoca</a>
       <a href="https://miqell24.github.io/timisoara-bus-map/">Timișoara</a>
@@ -72,7 +72,7 @@
       <a href="https://miqell24.github.io/constanta-bus-map/">Constanța</a>
       <a href="https://miqell24.github.io/kyiv-bus-map/">Kyiv</a>
       <a href="https://miqell24.github.io/lviv-bus-map/">Lviv</a>
-      <a href="https://miqell24.github.io/belgrade-bus-map/">Belgrade</a>
+      <a href="https://miqell24.github.io/belgrade-bus-map/">Beograd</a>
       <a href="https://miqell24.github.io/novi-sad-bus-map/">Novi Sad</a>
       <a href="https://miqell24.github.io/nis-bus-map/">Niš</a>
       <a href="https://miqell24.github.io/tirana-bus-map/">Tirana</a>
@@ -82,15 +82,15 @@
       <a href="https://miqell24.github.io/burgas-bus-map/">Burgas</a>
       <a href="https://miqell24.github.io/ruse-bus-map/">Ruse &amp; Giurgiu</a>
       <a href="https://miqell24.github.io/istanbul-bus-map/">Istanbul</a>
-      <a href="https://miqell24.github.io/athens-bus-map/">Athens</a>
+      <a href="https://miqell24.github.io/athens-bus-map/">Athina</a>
       <a href="https://miqell24.github.io/thessaloniki-bus-map/">Thessaloniki</a>
       <a href="https://miqell24.github.io/volos-bus-map/">Volos</a>
       <a href="https://miqell24.github.io/larisa-bus-map/">Larisa</a>
       <a href="https://miqell24.github.io/rome-bus-map/">Rome</a>
-      <a href="https://miqell24.github.io/naples-bus-map/">Naples</a>
-      <a href="https://miqell24.github.io/cairo-bus-map/">Cairo</a>
+      <a href="https://miqell24.github.io/naples-bus-map/">Napoli</a>
+      <a href="https://miqell24.github.io/cairo-bus-map/">Al-Qāhirah / Cairo</a>
       <a href="https://miqell24.github.io/addis-bus-map/">Addis Ababa</a>
-      <span class="current">Mexico City</span>
+      <span class="current">Ciudad de México / Mexico City</span>
       <a href="https://miqell24.github.io/sao-paulo-bus-map/">São Paulo</a>
       <a href="https://miqell24.github.io/rio-bus-map/">Rio de Janeiro</a>
       <a href="https://miqell24.github.io/ba-bus-map/">Buenos Aires</a>
@@ -123,11 +123,11 @@
     <li><label><input type="checkbox" id="toggle-mline" checked> <span class="sw line corridor-only mline"></span> Metrob&uacute;s (BRT)</label></li>
     <li class="sublegend corridor-only"><span class="mini" style="background:#e8a000"></span>L&iacute;neas 1&ndash;7 and the SL01 support service; dashed = shared with a street bus.
       The Metrob&uacute;s prints its bare number in amber, the Trolleb&uacute;s its L-number in green &mdash; both exactly as signed on the ground.</li>
-    <li><label><input type="checkbox" id="toggle-tram" checked> <span class="sw line corridor-only metro"></span> Metro, Tren Ligero, Cableb&uacute;s &amp; commuter rail</label></li>
+    <li><label><input type="checkbox" id="toggle-tram" checked> <span class="sw line corridor-only metro"></span> Tren Ligero, Metro, Cableb&uacute;s &amp; commuter rail</label></li>
     <li class="sublegend corridor-only">Metro 1&ndash;9, 12, A and B &middot; Cableb&uacute;s 1&ndash;3 (gondolas) &mdash; all in their official colours, all signed as bare
       L&iacute;neas in the street.</li>
     <li class="sublegend corridor-only">Three single-line railways have no line number of their own, so this map gives them a code:
-      <b>TL</b> Tren Ligero (Tasque&ntilde;a&ndash;Xochimilco) &middot; <b>FS</b> Tren Suburbano (Buenavista&ndash;Cuautitl&aacute;n) &middot; <b>TI</b> El Insurgente
+      <b>Tren Ligero</b> (Tasque&ntilde;a&ndash;Xochimilco) in the family&rsquo;s tram red &middot; <b>FS</b> Tren Suburbano (Buenavista&ndash;Cuautitl&aacute;n) &middot; <b>TI</b> El Insurgente
       (Zinacantepec&ndash;Santa Fe).</li>
     <li><span class="sw stop"></span> Stop</li>
     <li><span class="sw terminus"></span> Terminus</li>

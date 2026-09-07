@@ -149,7 +149,8 @@ const lineKey = (sn, r) => {
   if (ag === 'METRO') { const d = s0 === 'L12' ? '12' : s0; return K('M' + d, d); }
   if (ag === 'MB') return K('B' + s0.replace(/^SL0?/, 'SL'));
   if (ag === 'TROLE' || ag === 'SEMOVI') return K('T' + s0, 'L' + s0);
-  if (ag === 'TL') return 'TL';
+  // K strips the space out of a label; the Tren Ligero keeps its name whole
+  if (ag === 'TL') { LBL.set('TL', 'Tren Ligero'); return 'TL'; }
   if (ag === 'CBB') return K('CB' + s0);
   if (ag === 'SUB') return 'FS';
   if (ag === 'INTERURBANO') return 'TI';
@@ -176,19 +177,34 @@ const MODES = [{
 }];
 const tramAll = tramLines.length === 1 && tramLines[0] === 'all';
 // Everything on a fixed guideway gets the trunk treatment (wide ribbon, station
-// discs, always-on names): the Metro, the Tren Ligero, the Suburbano, the Tren
-// El Insurgente and the Cablebús.
-const isRailTrunk = (l) => /^(M(\d+|A|B)|TL|FS|TI|CB\d)$/.test(l);
-if (tramAll || tramLines.length) MODES.push({
-  mode: 'tram', label: 'Metro, Tren Ligero, Cablebús & the commuter trains',
+// discs, always-on names): the Metro, the Suburbano, the Tren El Insurgente
+// and the Cablebús. NOT the Tren Ligero: Tasqueña – Xochimilco is the old
+// tram line upgraded, one route under one name, and the city's own map
+// draws it as a tram — so it is a tram here too (user, 7.09.2026): family
+// red, its own cfg on the tram tracks, no trunk ribbon.
+const isRailTrunk = (l) => /^(M(\d+|A|B)|FS|TI|CB\d)$/.test(l);
+const tramSel = tramLines.filter((l) => l !== 'all' && l !== 'TL');
+if (tramAll || tramLines.includes('TL')) MODES.push({
+  mode: 'tram', label: 'Tren Ligero', osmFile: 'data/osm/mexico-rail.json',
+  graphMode: 'tram', railKeep: new Set(['light_rail', 'tram']),
+  color: '#d6212b', colorDark: '#7c1116',
+  all: tramAll, lines: tramAll ? [] : ['TL'],
+  feeds: [
+    { tag: 'cdmx', dir: 'data/gtfs', mapKey: lineKey, routeTypes: ['0'],
+      skipRoute: (r) => r.agency_id !== 'TL', noFeedColors: true },
+  ],
+});
+if (tramAll || tramSel.length) MODES.push({
+  mode: 'tram', label: 'Metro, Cablebús & the commuter trains',
   osmFile: 'data/osm/mexico-rail.json',
   graphMode: 'tram', railKeep: new Set(['subway', 'light_rail', 'rail', 'tram']),
   // the Cablebús is aerialway=gondola in OSM, not railway at all
   railExtra: (e) => /^(gondola|cable_car)$/.test(e.tags?.aerialway || ''),
   color: '#d6212b', colorDark: '#7c1116',
-  all: tramAll, lines: tramAll ? [] : tramLines,
+  all: tramAll, lines: tramAll ? [] : tramSel,
   feeds: [
-    { tag: 'cdmx', dir: 'data/gtfs', mapKey: lineKey, routeTypes: ['0', '1', '2', '6'] },
+    { tag: 'cdmx', dir: 'data/gtfs', mapKey: lineKey, routeTypes: ['0', '1', '2', '6'],
+      skipRoute: (r) => r.agency_id === 'TL' },
   ],
 });
 
@@ -313,7 +329,7 @@ async function processMode(cfg) {
         cfg.mlineSet.add(key);
         cfg.lineColors[key] = MLINE_YELLOW;
         cfg.lineColorsDark[key] = MLINE_DARK;
-      } else if (['0', '1', '2', '6'].includes(r.route_type) && /^[0-9A-F]{6}$/i.test(r.route_color || '')) {
+      } else if (!feed.noFeedColors && ['0', '1', '2', '6'].includes(r.route_type) && /^[0-9A-F]{6}$/i.test(r.route_color || '')) {
         // the feed ships the official line colours — metro M1 blue, M2 red,
         // SKM S1 coral, S2 blue, S3 amber, S4 green, S40 light green
         cfg.lineColors[key] = '#' + r.route_color.toUpperCase();

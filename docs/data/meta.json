@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T15:36:45.666Z",
+  "generatedAt": "2026-09-07T09:06:17.524Z",
   "bbox": [
     -99.695952,
     19.133177,
@@ -36,7 +36,12 @@
     },
     {
       "mode": "tram",
-      "label": "Metro, Tren Ligero, Cablebús & the commuter trains",
+      "label": "Tren Ligero",
+      "color": "#d6212b"
+    },
+    {
+      "mode": "tram",
+      "label": "Metro, Cablebús & the commuter trains",
       "color": "#d6212b"
     }
   ],
@@ -13298,6 +13303,56 @@
       "label": "L13"
     },
     {
+      "line": "TL",
+      "mode": "tram",
+      "color": "#d6212b",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Tasqueña",
+          "variants": 1,
+          "tripCount": 3,
+          "stops": 18,
+          "lengthKm": 12.57,
+          "stats": {
+            "observations": 352,
+            "matched": 352,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 1.9254184852816754,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "Xochimilco",
+          "variants": 1,
+          "tripCount": 3,
+          "stops": 18,
+          "lengthKm": 12.57,
+          "stats": {
+            "observations": 352,
+            "matched": 352,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 1.9386978400281094,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "Tren Ligero"
+    },
+    {
       "line": "CB1",
       "mode": "tram",
       "color": "#4EC3E0",
@@ -13317,7 +13372,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 23.68310516931781,
+            "meanError": 23.682604323924675,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13338,7 +13393,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 24.848695660260802,
+            "meanError": 24.84820078431776,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13367,7 +13422,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 9.118991412108008,
+            "meanError": 9.118981723230563,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13388,7 +13443,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 15.410096933379746,
+            "meanError": 15.410022742236947,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13417,7 +13472,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 1.5689668479832974,
+            "meanError": 1.5689423505128026,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13438,7 +13493,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 1.5689668479832974,
+            "meanError": 1.5689423505128026,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13467,7 +13522,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 8.834796502911821,
+            "meanError": 8.834607683643776,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13488,7 +13543,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 8.837503821906685,
+            "meanError": 8.8373234220016,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13516,7 +13571,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 5.498207160217718,
+            "meanError": 5.49820486804943,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13537,7 +13592,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 5.515486556530759,
+            "meanError": 5.515399658510391,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13566,7 +13621,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 3.8935136170182365,
+            "meanError": 3.8934435890082604,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13587,7 +13642,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 3.931969990636081,
+            "meanError": 3.9319332265560245,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13616,7 +13671,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 5.133561301376949,
+            "meanError": 5.133457657874154,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13637,7 +13692,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 5.131171674902145,
+            "meanError": 5.131074024176265,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13666,7 +13721,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 2.585634694966473,
+            "meanError": 2.5855816279717745,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13687,7 +13742,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 2.5774333454267584,
+            "meanError": 2.5773727219316234,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13716,7 +13771,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 3.9155357825442842,
+            "meanError": 3.915458601307394,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13737,7 +13792,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 3.9174746087489463,
+            "meanError": 3.9173920133756113,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13766,7 +13821,7 @@
             "bridged": 0,
             "rawStretchCount": 2,
             "rawMeters": 40,
-            "meanError": 6.376731995155233,
+            "meanError": 6.376851532773608,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13787,7 +13842,7 @@
             "bridged": 0,
             "rawStretchCount": 2,
             "rawMeters": 40,
-            "meanError": 5.855074649528132,
+            "meanError": 5.855083885292255,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13816,7 +13871,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 12.926117185436551,
+            "meanError": 12.925787078194917,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13837,7 +13892,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 13.218574253636467,
+            "meanError": 13.218224249524823,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13866,7 +13921,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 4.325623778738846,
+            "meanError": 4.32557809657847,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13887,7 +13942,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 4.397251431079714,
+            "meanError": 4.3971986239479985,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13916,7 +13971,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 3.3373272440542565,
+            "meanError": 3.337315034589271,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13937,7 +13992,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 3.3373272440542565,
+            "meanError": 3.337315034589271,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13966,7 +14021,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 2.4481081270215244,
+            "meanError": 2.4480861965619596,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -13987,7 +14042,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 2.4464190802405175,
+            "meanError": 2.4463876358507846,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -14016,7 +14071,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 2.4094328244802323,
+            "meanError": 2.409390196642683,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -14037,7 +14092,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 2.417366176828509,
+            "meanError": 2.4173337361143887,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -14066,7 +14121,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 2.779179811832398,
+            "meanError": 2.7791315780948436,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -14087,7 +14142,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 2.790490943073448,
+            "meanError": 2.7904929536077594,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -14116,7 +14171,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 3.8885745807698564,
+            "meanError": 3.8885098261584687,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0
@@ -14137,56 +14192,7 @@
             "bridged": 0,
             "rawStretchCount": 0,
             "rawMeters": 0,
-            "meanError": 3.8885745807698564,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ]
-    },
-    {
-      "line": "TL",
-      "mode": "tram",
-      "color": "#1F5AF0",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Tasqueña",
-          "variants": 1,
-          "tripCount": 3,
-          "stops": 18,
-          "lengthKm": 12.57,
-          "stats": {
-            "observations": 352,
-            "matched": 352,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 1.9242359383936147,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "Xochimilco",
-          "variants": 1,
-          "tripCount": 3,
-          "stops": 18,
-          "lengthKm": 12.57,
-          "stats": {
-            "observations": 352,
-            "matched": 352,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 1.9378083468969136,
+            "meanError": 3.8885098261584687,
             "roundaboutSegs": 0,
             "extStart": 0,
             "extEnd": 0

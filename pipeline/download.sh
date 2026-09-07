@@ -86,6 +86,15 @@ if [ ! -f data/osm/mexico-rail.json ]; then
     '[out:json][timeout:900][maxsize:1000000000];(way(19.15,-99.80,19.72,-98.90)["railway"~"^(subway|light_rail|rail|tram|construction)$"];way(19.15,-99.80,19.72,-98.90)["aerialway"~"^(gondola|cable_car)$"];);out geom;' 200
 fi
 
+# 2c) Fallback when the mirrors sit on the 54 × 50 km query (7.09.2026: an
+#     hour with no answer): the Geofabrik extract and pipeline/pbf-cut.py,
+#     which writes the same two files in the same Overpass JSON shape.
+if [ ! -f data/osm/mexico.json ] || [ ! -f data/osm/mexico-rail.json ]; then
+  echo "== Overpass gave nothing — Geofabrik mexico-latest.osm.pbf =="
+  [ -f data/mexico-latest.osm.pbf ] || curl -fL --retry 5 --retry-delay 15 -C - --max-time 3600     -o data/mexico-latest.osm.pbf "https://download.geofabrik.de/north-america/mexico-latest.osm.pbf"
+  python3 pipeline/pbf-cut.py
+fi
+
 # 3) MapLibre GL (vendored, no CDN at runtime)
 if [ ! -f web/vendor/maplibre-gl.js ]; then
   echo "== MapLibre GL =="

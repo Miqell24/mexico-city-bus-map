@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-01T15:38:08.153Z",
+  "generatedAt": "2026-09-07T09:06:19.152Z",
   "maxSeparate": 4,
   "pitchRatio": 0.5,
   "palette": 66,
-  "rowSlots": 34,
+  "rowSlots": 35,
   "colors": {
     "R1-D": "#b0045c",
     "R47-A": "#b20b42",
@@ -300,7 +300,7 @@
     "bundles": 3435,
     "strands": 76650,
     "corridors": 1003,
-    "rows": 11316,
+    "rows": 11298,
     "kmColoured": 3992,
     "kmGrey": 456
   }
