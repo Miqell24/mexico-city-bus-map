@@ -47,6 +47,564 @@
   ],
   "lines": [
     {
+      "line": "T1",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Central del Sur",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 52,
+          "lengthKm": 20.89,
+          "stats": {
+            "observations": 980,
+            "matched": 980,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 6.74881417623797,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "Central del Norte",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 43,
+          "lengthKm": 16.88,
+          "stats": {
+            "observations": 836,
+            "matched": 836,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.94065976359039,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L1"
+    },
+    {
+      "line": "T2",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Pantitlán",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 40,
+          "lengthKm": 15.08,
+          "stats": {
+            "observations": 449,
+            "matched": 449,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 3.1424978250854045,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "Chapultepec",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 34,
+          "lengthKm": 12.58,
+          "stats": {
+            "observations": 283,
+            "matched": 283,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 4.5337278118218665,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L2"
+    },
+    {
+      "line": "T3",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Mixcoac Norte",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 24,
+          "lengthKm": 5.89,
+          "stats": {
+            "observations": 131,
+            "matched": 131,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.831690615729866,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "Museo de Transportes Eléctricos",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 27,
+          "lengthKm": 6.5,
+          "stats": {
+            "observations": 138,
+            "matched": 138,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.951328841122213,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L3"
+    },
+    {
+      "line": "T4",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "El Rosario",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 70,
+          "lengthKm": 23.46,
+          "stats": {
+            "observations": 463,
+            "matched": 463,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.1966932820311524,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "Metro Boulevard Puerto Aéreo",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 66,
+          "lengthKm": 22.06,
+          "stats": {
+            "observations": 358,
+            "matched": 358,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 3.5458142606390566,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L4"
+    },
+    {
+      "line": "T5",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Metro Hidalgo",
+          "variants": 2,
+          "tripCount": 2,
+          "stops": 55,
+          "lengthKm": 14.82,
+          "stats": {
+            "observations": 694,
+            "matched": 694,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 3.4526732979898616,
+            "roundaboutSegs": 24,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "San Felipe de Jesús",
+          "variants": 2,
+          "tripCount": 2,
+          "stops": 56,
+          "lengthKm": 14.39,
+          "stats": {
+            "observations": 715,
+            "matched": 715,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 3.282821031405837,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L5"
+    },
+    {
+      "line": "T6",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Chapultepec",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 43,
+          "lengthKm": 13.92,
+          "stats": {
+            "observations": 449,
+            "matched": 449,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 3.1883521284316494,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "El Rosario",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 55,
+          "lengthKm": 15.36,
+          "stats": {
+            "observations": 762,
+            "matched": 762,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.1342006039344446,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L6"
+    },
+    {
+      "line": "T7",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Ciudad Universitaria - Estadio C.U.",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 42,
+          "lengthKm": 15.74,
+          "stats": {
+            "observations": 616,
+            "matched": 616,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.574971612425435,
+            "roundaboutSegs": 25,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "CETRAM Periférico",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 46,
+          "lengthKm": 14.65,
+          "stats": {
+            "observations": 574,
+            "matched": 574,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 4.317372568459142,
+            "roundaboutSegs": 3,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L7"
+    },
+    {
+      "line": "T8",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "Zacatenco",
+          "headsign": "Zacatenco",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 47,
+          "lengthKm": 10.88,
+          "stats": {
+            "observations": 305,
+            "matched": 305,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 2.91706455424586,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L8"
+    },
+    {
+      "line": "T9",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Tepalcates",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 24,
+          "lengthKm": 12.45,
+          "stats": {
+            "observations": 355,
+            "matched": 355,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 4.0959318192925105,
+            "roundaboutSegs": 10,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "Villa de Cortés",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 19,
+          "lengthKm": 12.46,
+          "stats": {
+            "observations": 329,
+            "matched": 329,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 1.854311424984417,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L9"
+    },
+    {
+      "line": "T10",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Acahualtepec",
+          "variants": 1,
+          "tripCount": 1,
+          "stops": 11,
+          "lengthKm": 7.22,
+          "stats": {
+            "observations": 174,
+            "matched": 174,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 3.0949143623137423,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "Constitución de 1917",
+          "variants": 1,
+          "tripCount": 1,
+          "stops": 11,
+          "lengthKm": 7.22,
+          "stats": {
+            "observations": 174,
+            "matched": 174,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 3.1243012508133887,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L10"
+    },
+    {
+      "line": "T12",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0.0",
+          "headsign": "Tasqueña",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 18,
+          "lengthKm": 8.33,
+          "stats": {
+            "observations": 401,
+            "matched": 401,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 3.3355618728851875,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        },
+        {
+          "dir": "1.0",
+          "headsign": "Perisur",
+          "variants": 1,
+          "tripCount": 2,
+          "stops": 16,
+          "lengthKm": 7.31,
+          "stats": {
+            "observations": 333,
+            "matched": 333,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 5.092454697633599,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L12"
+    },
+    {
+      "line": "T13",
+      "mode": "bus",
+      "color": "#149a3f",
+      "dirs": [
+        {
+          "dir": "0",
+          "headsign": "",
+          "variants": 1,
+          "tripCount": 1,
+          "stops": 0,
+          "lengthKm": 31.6,
+          "stats": {
+            "observations": 1092,
+            "matched": 1092,
+            "noCandidates": 0,
+            "viterbiBreaks": 0,
+            "bridged": 0,
+            "rawStretchCount": 0,
+            "rawMeters": 0,
+            "meanError": 6.546605967719393,
+            "roundaboutSegs": 0,
+            "extStart": 0,
+            "extEnd": 0
+          }
+        }
+      ],
+      "label": "L13"
+    },
+    {
       "line": "B1",
       "mode": "bus",
       "color": "#e8a000",
@@ -12743,564 +13301,6 @@
         }
       ],
       "label": "L1"
-    },
-    {
-      "line": "T1",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Central del Sur",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 52,
-          "lengthKm": 20.89,
-          "stats": {
-            "observations": 980,
-            "matched": 980,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 6.74881417623797,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "Central del Norte",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 43,
-          "lengthKm": 16.88,
-          "stats": {
-            "observations": 836,
-            "matched": 836,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 5.94065976359039,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L1"
-    },
-    {
-      "line": "T2",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Pantitlán",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 40,
-          "lengthKm": 15.08,
-          "stats": {
-            "observations": 449,
-            "matched": 449,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 3.1424978250854045,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "Chapultepec",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 34,
-          "lengthKm": 12.58,
-          "stats": {
-            "observations": 283,
-            "matched": 283,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 4.5337278118218665,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L2"
-    },
-    {
-      "line": "T3",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Mixcoac Norte",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 24,
-          "lengthKm": 5.89,
-          "stats": {
-            "observations": 131,
-            "matched": 131,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 5.831690615729866,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "Museo de Transportes Eléctricos",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 27,
-          "lengthKm": 6.5,
-          "stats": {
-            "observations": 138,
-            "matched": 138,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 2.951328841122213,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L3"
-    },
-    {
-      "line": "T4",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "El Rosario",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 70,
-          "lengthKm": 23.46,
-          "stats": {
-            "observations": 463,
-            "matched": 463,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 2.1966932820311524,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "Metro Boulevard Puerto Aéreo",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 66,
-          "lengthKm": 22.06,
-          "stats": {
-            "observations": 358,
-            "matched": 358,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 3.5458142606390566,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L4"
-    },
-    {
-      "line": "T5",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Metro Hidalgo",
-          "variants": 2,
-          "tripCount": 2,
-          "stops": 55,
-          "lengthKm": 14.82,
-          "stats": {
-            "observations": 694,
-            "matched": 694,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 3.4526732979898616,
-            "roundaboutSegs": 24,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "San Felipe de Jesús",
-          "variants": 2,
-          "tripCount": 2,
-          "stops": 56,
-          "lengthKm": 14.39,
-          "stats": {
-            "observations": 715,
-            "matched": 715,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 3.282821031405837,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L5"
-    },
-    {
-      "line": "T6",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Chapultepec",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 43,
-          "lengthKm": 13.92,
-          "stats": {
-            "observations": 449,
-            "matched": 449,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 3.1883521284316494,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "El Rosario",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 55,
-          "lengthKm": 15.36,
-          "stats": {
-            "observations": 762,
-            "matched": 762,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 2.1342006039344446,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L6"
-    },
-    {
-      "line": "T7",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Ciudad Universitaria - Estadio C.U.",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 42,
-          "lengthKm": 15.74,
-          "stats": {
-            "observations": 616,
-            "matched": 616,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 2.574971612425435,
-            "roundaboutSegs": 25,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "CETRAM Periférico",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 46,
-          "lengthKm": 14.65,
-          "stats": {
-            "observations": 574,
-            "matched": 574,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 4.317372568459142,
-            "roundaboutSegs": 3,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L7"
-    },
-    {
-      "line": "T8",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "Zacatenco",
-          "headsign": "Zacatenco",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 47,
-          "lengthKm": 10.88,
-          "stats": {
-            "observations": 305,
-            "matched": 305,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 2.91706455424586,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L8"
-    },
-    {
-      "line": "T9",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Tepalcates",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 24,
-          "lengthKm": 12.45,
-          "stats": {
-            "observations": 355,
-            "matched": 355,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 4.0959318192925105,
-            "roundaboutSegs": 10,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "Villa de Cortés",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 19,
-          "lengthKm": 12.46,
-          "stats": {
-            "observations": 329,
-            "matched": 329,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 1.854311424984417,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L9"
-    },
-    {
-      "line": "T10",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Acahualtepec",
-          "variants": 1,
-          "tripCount": 1,
-          "stops": 11,
-          "lengthKm": 7.22,
-          "stats": {
-            "observations": 174,
-            "matched": 174,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 3.0949143623137423,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "Constitución de 1917",
-          "variants": 1,
-          "tripCount": 1,
-          "stops": 11,
-          "lengthKm": 7.22,
-          "stats": {
-            "observations": 174,
-            "matched": 174,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 3.1243012508133887,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L10"
-    },
-    {
-      "line": "T12",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0.0",
-          "headsign": "Tasqueña",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 18,
-          "lengthKm": 8.33,
-          "stats": {
-            "observations": 401,
-            "matched": 401,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 3.3355618728851875,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        },
-        {
-          "dir": "1.0",
-          "headsign": "Perisur",
-          "variants": 1,
-          "tripCount": 2,
-          "stops": 16,
-          "lengthKm": 7.31,
-          "stats": {
-            "observations": 333,
-            "matched": 333,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 5.092454697633599,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L12"
-    },
-    {
-      "line": "T13",
-      "mode": "bus",
-      "color": "#149a3f",
-      "dirs": [
-        {
-          "dir": "0",
-          "headsign": "",
-          "variants": 1,
-          "tripCount": 1,
-          "stops": 0,
-          "lengthKm": 31.6,
-          "stats": {
-            "observations": 1092,
-            "matched": 1092,
-            "noCandidates": 0,
-            "viterbiBreaks": 0,
-            "bridged": 0,
-            "rawStretchCount": 0,
-            "rawMeters": 0,
-            "meanError": 6.546605967719393,
-            "roundaboutSegs": 0,
-            "extStart": 0,
-            "extEnd": 0
-          }
-        }
-      ],
-      "label": "L13"
     },
     {
       "line": "TL",
