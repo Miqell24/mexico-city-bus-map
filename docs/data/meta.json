@@ -1011,7 +1011,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": " Cuatro Caminos- Canal de Chalco",
+          "headsign": "Cuatro Caminos- Canal de Chalco",
           "variants": 1,
           "tripCount": 1,
           "stops": 68,
@@ -1032,7 +1032,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": " Canal de Chalco - Cuatro Caminos",
+          "headsign": "Canal de Chalco - Cuatro Caminos",
           "variants": 1,
           "tripCount": 1,
           "stops": 73,
@@ -1061,7 +1061,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": " Tacubaya - Canal de Chalco",
+          "headsign": "Tacubaya - Canal de Chalco",
           "variants": 1,
           "tripCount": 1,
           "stops": 56,
@@ -1082,7 +1082,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": " Canal de Chalco - Tacubaya",
+          "headsign": "Canal de Chalco - Tacubaya",
           "variants": 1,
           "tripCount": 1,
           "stops": 61,
@@ -1111,7 +1111,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": " Barranca del Muerto - Canal de Chalco",
+          "headsign": "Barranca del Muerto - Canal de Chalco",
           "variants": 1,
           "tripCount": 1,
           "stops": 44,
@@ -1132,7 +1132,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": " Canal de Chalco - Barranca del Muerto",
+          "headsign": "Canal de Chalco - Barranca del Muerto",
           "variants": 1,
           "tripCount": 1,
           "stops": 49,
@@ -1161,7 +1161,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Taxqueña - Pirul ",
+          "headsign": "Taxqueña - Pirul",
           "variants": 1,
           "tripCount": 2,
           "stops": 52,
@@ -1182,7 +1182,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Pirul  - Taxqueña",
+          "headsign": "Pirul - Taxqueña",
           "variants": 1,
           "tripCount": 2,
           "stops": 51,
@@ -1382,7 +1382,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Moras - C.U. ",
+          "headsign": "Moras - C.U.",
           "variants": 1,
           "tripCount": 2,
           "stops": 55,
@@ -1511,7 +1511,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": " Alameda Oriente - Constitución",
+          "headsign": "Alameda Oriente - Constitución",
           "variants": 1,
           "tripCount": 1,
           "stops": 20,
@@ -1532,7 +1532,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": " Constitución - Alameda Oriente",
+          "headsign": "Constitución - Alameda Oriente",
           "variants": 1,
           "tripCount": 1,
           "stops": 25,
@@ -1561,7 +1561,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": " Canal de San Juan - Constitución",
+          "headsign": "Canal de San Juan - Constitución",
           "variants": 1,
           "tripCount": 1,
           "stops": 17,
@@ -1611,7 +1611,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Central de Abasto -  Alameda Oriente",
+          "headsign": "Central de Abasto - Alameda Oriente",
           "variants": 1,
           "tripCount": 1,
           "stops": 19,
@@ -2082,7 +2082,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Chapultepec - Duraznos ",
+          "headsign": "Chapultepec - Duraznos",
           "variants": 1,
           "tripCount": 1,
           "stops": 4,
@@ -2132,7 +2132,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Chapultepec - Tecamachalco ",
+          "headsign": "Chapultepec - Tecamachalco",
           "variants": 1,
           "tripCount": 1,
           "stops": 26,
@@ -2161,7 +2161,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Tacubaya por Qro. - La Valenciana ",
+          "headsign": "Tacubaya por Qro. - La Valenciana",
           "variants": 1,
           "tripCount": 2,
           "stops": 80,
@@ -2182,7 +2182,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "La Valenciana - Tacubaya por Qro. ",
+          "headsign": "La Valenciana - Tacubaya por Qro.",
           "variants": 1,
           "tripCount": 2,
           "stops": 68,
@@ -2382,7 +2382,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Tepalcates - Tacubaya por Campeche ",
+          "headsign": "Tepalcates - Tacubaya por Campeche",
           "variants": 1,
           "tripCount": 2,
           "stops": 62,
@@ -2482,7 +2482,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Panteón San Isidro - Metro Oceanía Norte 172 ",
+          "headsign": "Panteón San Isidro - Metro Oceanía Norte 172",
           "variants": 1,
           "tripCount": 2,
           "stops": 49,
@@ -2532,7 +2532,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Panteón San Isidro - Peñón ",
+          "headsign": "Panteón San Isidro - Peñón",
           "variants": 1,
           "tripCount": 2,
           "stops": 54,
@@ -2861,7 +2861,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Cuatro Caminos por flores Magón - Aeropuerto ",
+          "headsign": "Cuatro Caminos por flores Magón - Aeropuerto",
           "variants": 1,
           "tripCount": 1,
           "stops": 52,
@@ -2882,7 +2882,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Aeropuerto  - Cuatro Caminos por flores Magón",
+          "headsign": "Aeropuerto - Cuatro Caminos por flores Magón",
           "variants": 1,
           "tripCount": 1,
           "stops": 51,
@@ -3032,7 +3032,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Cuatro Caminos - Buenavista ",
+          "headsign": "Cuatro Caminos - Buenavista",
           "variants": 1,
           "tripCount": 1,
           "stops": 44,
@@ -3082,7 +3082,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Lomas de Sotelo - Buenavista ",
+          "headsign": "Lomas de Sotelo - Buenavista",
           "variants": 1,
           "tripCount": 1,
           "stops": 42,
@@ -3132,7 +3132,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Cuatro Caminos - San Cosme ",
+          "headsign": "Cuatro Caminos - San Cosme",
           "variants": 1,
           "tripCount": 1,
           "stops": 38,
@@ -3211,7 +3211,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Chapultepec - Ingenieros Militares ",
+          "headsign": "Chapultepec - Ingenieros Militares",
           "variants": 1,
           "tripCount": 1,
           "stops": 16,
@@ -3232,7 +3232,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Ingenieros Militares - Chapultepec ",
+          "headsign": "Ingenieros Militares - Chapultepec",
           "variants": 1,
           "tripCount": 1,
           "stops": 19,
@@ -3282,7 +3282,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Av.Homero - Chapultepec ",
+          "headsign": "Av.Homero - Chapultepec",
           "variants": 1,
           "tripCount": 1,
           "stops": 13,
@@ -3432,7 +3432,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Lomas de Sotelo por Homero - Chapultepec ",
+          "headsign": "Lomas de Sotelo por Homero - Chapultepec",
           "variants": 1,
           "tripCount": 1,
           "stops": 17,
@@ -3561,7 +3561,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Metro Basilica -  Pradera",
+          "headsign": "Metro Basilica - Pradera",
           "variants": 1,
           "tripCount": 1,
           "stops": 31,
@@ -3711,7 +3711,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Cuatro Caminos - Revolución ",
+          "headsign": "Cuatro Caminos - Revolución",
           "variants": 1,
           "tripCount": 1,
           "stops": 41,
@@ -3932,7 +3932,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Izazaga por Miramontes - Xochimilco ",
+          "headsign": "Izazaga por Miramontes - Xochimilco",
           "variants": 1,
           "tripCount": 1,
           "stops": 90,
@@ -4011,7 +4011,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": " Santiago Tepalcatlalpan - Izazaga",
+          "headsign": "Santiago Tepalcatlalpan - Izazaga",
           "variants": 1,
           "tripCount": 1,
           "stops": 73,
@@ -4032,7 +4032,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": " Izazaga - Santiago Tepalcatlalpan",
+          "headsign": "Izazaga - Santiago Tepalcatlalpan",
           "variants": 1,
           "tripCount": 1,
           "stops": 94,
@@ -4132,7 +4132,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Corregidora - La Joya ",
+          "headsign": "Corregidora - La Joya",
           "variants": 1,
           "tripCount": 1,
           "stops": 82,
@@ -4511,7 +4511,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "1ro de Mayo - Chapultepec ",
+          "headsign": "1ro de Mayo - Chapultepec",
           "variants": 1,
           "tripCount": 1,
           "stops": 23,
@@ -4611,7 +4611,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Chapultepec  - Satélite",
+          "headsign": "Chapultepec - Satélite",
           "variants": 1,
           "tripCount": 1,
           "stops": 37,
@@ -4632,7 +4632,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Satélite - Chapultepec ",
+          "headsign": "Satélite - Chapultepec",
           "variants": 1,
           "tripCount": 1,
           "stops": 34,
@@ -4832,7 +4832,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Central de Abastos - Tacuba ",
+          "headsign": "Central de Abastos - Tacuba",
           "variants": 1,
           "tripCount": 1,
           "stops": 77,
@@ -4961,7 +4961,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Periférico - Balneario ",
+          "headsign": "Periférico - Balneario",
           "variants": 1,
           "tripCount": 1,
           "stops": 48,
@@ -4982,7 +4982,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Balneario  - Periférico",
+          "headsign": "Balneario - Periférico",
           "variants": 1,
           "tripCount": 1,
           "stops": 53,
@@ -5811,7 +5811,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Texacalco ",
+          "headsign": "Texacalco",
           "variants": 1,
           "tripCount": 1,
           "stops": 24,
@@ -6011,7 +6011,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Av. Sauzales ",
+          "headsign": "Av. Sauzales",
           "variants": 1,
           "tripCount": 1,
           "stops": 24,
@@ -7682,7 +7682,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Base Av. del  Valle del Yang-Tse y Valle de La Mota",
+          "headsign": "Base Av. del Valle del Yang-Tse y Valle de La Mota",
           "variants": 1,
           "tripCount": 1,
           "stops": 61,
@@ -7732,7 +7732,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Base Av. del  Valle del Yang-Tse y Valle de La Mota",
+          "headsign": "Base Av. del Valle del Yang-Tse y Valle de La Mota",
           "variants": 1,
           "tripCount": 1,
           "stops": 51,
@@ -8609,7 +8609,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Cetram Metro Cuatro Caminos ",
+          "headsign": "Cetram Metro Cuatro Caminos",
           "variants": 1,
           "tripCount": 2,
           "stops": 46,
@@ -9659,7 +9659,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "C. B. Auditorio Nacional-Paseo de la Reforma - ",
+          "headsign": "C. B. Auditorio Nacional-Paseo de la Reforma",
           "variants": 1,
           "tripCount": 6,
           "stops": 24,
@@ -9709,7 +9709,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "C. B. Auditorio Nacional-Paseo de la Reforma - ",
+          "headsign": "C. B. Auditorio Nacional-Paseo de la Reforma",
           "variants": 1,
           "tripCount": 2,
           "stops": 27,
@@ -10030,7 +10030,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Cocoyotes ",
+          "headsign": "Cocoyotes",
           "variants": 1,
           "tripCount": 2,
           "stops": 46,
@@ -10509,7 +10509,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Metro Tacubaya ",
+          "headsign": "Metro Tacubaya",
           "variants": 1,
           "tripCount": 2,
           "stops": 38,
@@ -10530,7 +10530,7 @@
         },
         {
           "dir": "1.0",
-          "headsign": "Amp. Jalapa ",
+          "headsign": "Amp. Jalapa",
           "variants": 1,
           "tripCount": 2,
           "stops": 42,
@@ -10709,7 +10709,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "Metro Mixcoac ",
+          "headsign": "Metro Mixcoac",
           "variants": 1,
           "tripCount": 3,
           "stops": 48,
@@ -13159,7 +13159,7 @@
       "dirs": [
         {
           "dir": "0.0",
-          "headsign": "C. B. Auditorio Nacional-Paseo de la Reforma - ",
+          "headsign": "C. B. Auditorio Nacional-Paseo de la Reforma",
           "variants": 1,
           "tripCount": 1,
           "stops": 3,
